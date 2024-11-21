@@ -1,4 +1,4 @@
-let fruta = "abacaxi";
+let fruta = "maça";
 
 switch (fruta) {
   case "abacaxi":

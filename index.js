@@ -1,11 +1,10 @@
 let nomeHeroi = "Carlinhos";
-let xpHeroi = 10;
+let xpHeroi = 10000;
 const mensagemRanking = " está no nível: ";
 
-while (xpHeroi < 10000) {
-  xpHeroi++; //ESTUDAR LAÇOS DE REPETIÇÃO PARA CONCLUIR
+for (cont = 1; cont <= xpHeroi; cont++) {
+  console.log(nomeHeroi + " acumulou: " + cont + " de xp!");
 }
-console.log(xpHeroi);
 
 if (xpHeroi <= 1000) {
   console.log("O herói de nome " + nomeHeroi + mensagemRanking + "Ferro");
@@ -14,7 +13,9 @@ if (xpHeroi <= 1000) {
 } else if (xpHeroi > 2000 && xpHeroi <= 5000) {
   console.log("O herói de nome " + nomeHeroi + mensagemRanking + "Prata/Ouro");
 } else if (xpHeroi > 5000 && xpHeroi <= 8000) {
-  console.log("O herói de nome " + nomeHeroi + mensagemRanking + "Platina/Diamante");
+  console.log(
+    "O herói de nome " + nomeHeroi + mensagemRanking + "Platina/Diamante"
+  );
 } else if (xpHeroi > 8000 && xpHeroi <= 9000) {
   console.log("O herói de nome " + nomeHeroi + mensagemRanking + "Ascendente");
 } else if (xpHeroi > 9000 && xpHeroi <= 10000) {
